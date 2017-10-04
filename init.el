@@ -14,11 +14,10 @@
 
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
 ;; Geiser
 (setq geiser-racket-binary "/Applications/Racket v6.0/bin/racket")
 ;; Paredit
-
-;;; To install later...
 
 
 ;;; Customizations
