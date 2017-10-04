@@ -13,10 +13,12 @@
 ;;; Installed Packages
 
 ;; Magit
+(global-set-key (kbd "C-x g") 'magit-status)
 ;; Geiser
 (setq geiser-racket-binary "/Applications/Racket v6.0/bin/racket")
 ;; Paredit
 
+;;; To install later...
 
 
 ;;; Customizations
