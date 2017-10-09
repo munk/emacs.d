@@ -19,6 +19,32 @@
 (setq geiser-racket-binary "/Applications/Racket v6.0/bin/racket")
 ;; Paredit
 
+;; Org mode
+(require 'org)
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(setq org-log-done t)
+(setq org-agenda-files (list
+			"~/org/home.org"
+			"~/org/projects.org"
+			"~/org/radio.org"))
+
+;;; Parens!
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+(electric-pair-mode 1)
+(setq electirc-pair-pairs '(
+			    (?\" . ?\")
+			    (?\{ . ?\})
+			    (?\[ . ?\])))
+
+;;; Prettify
+(global-prettify-symbols-mode 1)
+
+
+;;; NOTES:
+;; use smerge-mode to resolve conflicts with magit
+
 
 ;;; Customizations
 (custom-set-variables
