@@ -10,6 +10,7 @@
 	(concat (getenv "PATH")
 		":" "/usr/local/bin"))
 
+
 ;;; Installed Packages
 
 ;; Magit
@@ -18,6 +19,8 @@
 ;; Geiser
 (setq geiser-racket-binary "/Applications/Racket v6.0/bin/racket")
 ;; Paredit
+;; Haskell Mode
+;; Tuareg
 
 ;; Org mode
 (require 'org)
@@ -59,3 +62,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq package-enable-at-startup nil)
+(package-initialize)
+(exec-path-from-shell-initialize)
